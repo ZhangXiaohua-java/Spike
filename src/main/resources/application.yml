@@ -7,10 +7,10 @@ spring:
         cachecontrol:
           cache-private: true
   datasource:
-    url: jdbc:mysql://150.158.45.212:3306/shop?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://xxx.xx.xx.xx:xxxxx/shop?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: cloud
-    password: javago
+    username: xxxx
+    password: xxxxx
     hikari:
       minimum-idle: 2
       maximum-pool-size: 300
@@ -26,10 +26,10 @@ spring:
     timeout: 1800
     store-type: redis
   rabbitmq:
-    host: 150.158.45.212
+    host: 150.xxx.xx.xxx
     port: 5672
-    password: javago
-    username: rabbit
+    password: xxxx
+    username: xxxx
     virtual-host: /
     listener:
       direct:
@@ -39,9 +39,9 @@ spring:
           max-attempts: 3
           multiplier: 2
   redis:
-    host: 150.158.45.212
-    port: 6379
-    password: java
+    host: 150.xxx.xxx.xxxx
+    port: xxxx
+    password: xxxxx
     database: 0
     lettuce:
       pool:

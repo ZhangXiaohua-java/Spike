@@ -83,7 +83,7 @@ public class CookieUtils {
 	public static void generateUser() throws SQLException, ClassNotFoundException, IOException, JSONException {
 		fileOutputStream = new FileOutputStream(new File("D:\\appsdata\\jar\\config.txt"));
 		//Class.forName("com.mysql.cj.jdbc.Driver");
-		//Connection connection = DriverManager.getConnection("jdbc:mysql://150.158.45.212:3306/shop?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8", "cloud", "javago");
+		//Connection connection = DriverManager.getConnection("jdbc:mysql://150.xxx.xx.xxx:3306/shop?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8", "xxxxx", "xxxx");
 		//String sql = "insert into  t_user(id, nickname, password, salt, registry_date, last_login_time, login_count)\n" +
 		//		"VALUES\n" +
 		//		"    (? , ?, '1844b64585da4c92723aeaeee52e7ebf', 'abcabc', now(), now(), 0);";
