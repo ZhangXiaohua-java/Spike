@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: Shop
+  web:
+    resources:
+      cache:
+        cachecontrol:
+          cache-private: true
+  datasource:
+    url: jdbc:mysql://150.158.45.212:3306/shop?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: cloud
+    password: javago
+    hikari:
+      minimum-idle: 2
+      maximum-pool-size: 300
+      pool-name: pool
+      idle-timeout: 3000
+      connection-test-query: SELECT VERSION()
+      connection-timeout: 3000
+      keepalive-time: 30000
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+  session:
+    timeout: 1800
+    store-type: redis
+  rabbitmq:
+    host: 150.158.45.212
+    port: 5672
+    password: javago
+    username: rabbit
+    virtual-host: /
+    listener:
+      direct:
+        retry:
+          enabled: true
+          initial-interval: 3000
+          max-attempts: 3
+          multiplier: 2
+  redis:
+    host: 150.158.45.212
+    port: 6379
+    password: java
+    database: 0
+    lettuce:
+      pool:
+        enabled: true
+        max-active: 10
+        max-idle: 5
+        min-idle: 3
+        max-wait: 3000
